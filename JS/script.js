@@ -14,3 +14,18 @@ const joke = await randomjoke();
 console.log(joke);
 
 
+// Insult API
+async function randominsult() {
+    const url = 'https://insult.mattbas.org/api/en_corporate/insult.json';
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error(error);
+        return false;
+    }
+}
+const insult = await randominsult();
+console.log(insult);
+
