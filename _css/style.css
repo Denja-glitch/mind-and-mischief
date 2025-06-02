@@ -193,16 +193,6 @@ p {
     flex-direction: column;
 }
 
-.content-wrapper-joke {
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    background-image: url('_static/rainbow.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
 .start-subtitle {
     display: flex;
     justify-content: center;
@@ -240,6 +230,21 @@ p {
     justify-content: center;
 }
 
+.insult-subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.insult-output{
+    display: flex;
+    justify-content: center;
+}
+
+.insult-buttons{
+    display: flex;
+    justify-content: center;
+}
+
 .title-404 {
     display: flex;
     justify-content: center;
@@ -268,6 +273,23 @@ p {
     justify-content: flex-end;
 }
 
+.footer-wrapper-insult {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.insult_hamster{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.insult_disclaimer{
+    display: flex;
+    align-items: start;
+    max-width: 50vw;
+}
 
 
 /*Bildgrössen*/
@@ -290,6 +312,10 @@ p {
 }
 
 #image_hamster{
+    height: 20%;
+}
+
+#image_insulthamster{
     height: 20%;
 }
 
