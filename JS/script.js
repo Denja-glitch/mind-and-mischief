@@ -29,3 +29,30 @@ async function randominsult() {
 const insult = await randominsult();
 console.log(insult);
 
+
+
+// Javascript für die Animationen
+let currentPage = 1; // Start auf Seite 2 (Index 1)
+const slider = document.getElementById('slider');
+const totalPages = 3;
+
+function updateSlider() {
+    slider.style.transform = `translateX(-${currentPage * 100}vw)`;
+}
+
+function nextPage() {
+    if (currentPage < totalPages - 1) {
+        currentPage++;
+        updateSlider();
+    }
+}
+
+function prevPage() {
+    if (currentPage > 0) {
+        currentPage--;
+        updateSlider();
+    }
+}
+
+// Lädt die funktion beim öffnen der Seite
+window.onload = updateSlider;
