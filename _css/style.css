@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.slider-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    width: 300vw;
+    height: 100%;
+    transform: translateX(-100vw); /* Start direkt bei Seite 2 */
+    transition: none; /* Keine Animation beim Laden */
+}
+
+.page {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+
+
+
+
+/*Hintergrundfarben*/
+.page:nth-child(1) {
+    background: #E773ED;
+}
+
+.page:nth-child(2) {
+    background: #3421FF;
+    color: #000;
+}
+
+.page:nth-child(3) {
+    background: #49F858;
+}
+
+
+
+
+/*Buttons*/
+.page-buttons {
+    margin-top: 20px;
+}
+
+.page-buttons button {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin:10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #060606;
+    background-color: #f86f49;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.controls button {
+    font-size: 2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    pointer-events: all;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+/*Bild Hover*/
+.bild-container {
+    width: 300px;
+    overflow:visible;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.bild-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.bild-container:hover img {
+    transform: scale(1.3);
+    /* 10% größer beim Hover */
+}
+
+
+
+
+
+/*Font styling*/
+h1, h2, h3, p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Architects Daughter';
+    letter-spacing: 2px;
+    color: #ffeb3b; /* Gelb */
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Architects Daughter';
+    color: #ff6ce6;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Architects Daughter';
+    color:yellow;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Azeret Mono', monospace;
+    color: #ffaa00;
+}
+
+
+
+
+/*Header*/
+.header-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5rem;
+}
+
+.titel-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*Contents*/
+.content-wrapper {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.start-subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.start-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.start-image {
+    display: flex;
+    justify-content: center;
+}
+
+.start-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+.joke-subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.joke-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.joke-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*Footer*/
+.footer-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.start-disclaimer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*Bildgrössen*/
+#header_logo {
+    width: 20%;
+    max-width: 150px;
+}
+
+#titel_logo {
+    width: 70%;
+    max-width: 500px;
+}
+
+#image_mouse {
+    height: 40%;
+}
+
+#image_wink{
+    height: 30%;
+}
+
+#image_hamster{
+    height: 20%;
+}
+
+#image_404{
+    height: 40%;
+}
+
+#start-disclaimer {
+    width: 20%;
+    max-width: 300px;
+}

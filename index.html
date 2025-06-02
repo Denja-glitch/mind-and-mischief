@@ -3,20 +3,157 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Mind and Mischief</title>
-</head>
 
+
+    <!-- Name der Webseite -->
+    <title>Mind&Mischief</title>
+
+    <!-- Verlinkung für CSS -->
+    <link rel="stylesheet" href="_css/reset.css"> <!-- Setzt die CSS Einstellungen des Browsers zurück -->
+    <link rel="stylesheet" href="_css/style.css"> <!-- Hier kommen die gewollten CSS Einstellungen -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Azeret+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
 
 <body>
 
-    <div class="container">
-        <h1>Es Witzli für dich</h1>
-        <div id="joke" class="joke-box">drück mol</div>
-        <button id="getJoke">ich wett lache</button>
-      </div>
 
-    <script src="js/script.js" type="module"></script>
+    <div class="slider-wrapper">
+
+        <div id="slider" class="container">
+
+
+            <div class="page"> <!--Joke Seite-->
+                
+                <!--Header-->
+                <div class="header-wrapper">
+                   
+                    <div class="logo-container">
+                     <img src="_static/Logo.png" alt="Titelbild" id="header_logo">
+                    </div>
+                   
+                    <div class="titel-container">
+                     <img src="_static/Titel_pink.png" alt="Titel" id="titel_logo">
+                    </div>
+
+                </div>
+                
+
+                <!--Inhalt-->
+                <div class="content-wrapper">
+                
+                    <div class="joke-subtitle">
+                     <h3 id="output_joke"></h3>
+                    </div>
+
+                    <div class="joke-buttons">
+                     <div class="page-buttons">
+                        <button type="button" onclick="get_joke('https://v2.jokeapi.dev/joke/Any?lang=de&type=single')">bring mich zum Lachen</button>
+                        <button type="button" onclick="nextPage()">bring mich nach Hause</button>
+                     </div>
+                    </div>
+
+                    <div class="joke-image">
+                     <img src="_static/mouse.png" alt="zauberlachmaus" id="image_mouse">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="page"> <!--Startseite-->
+                
+                <!--Header-->
+                <div class="header-wrapper">
+                   
+                    <div class="logo-container">
+                     <img src="_static/Logo.png" alt="Titelbild" id="header_logo">
+                    </div>
+                   
+                    <div class="titel-container">
+                     <img src="_static/titel.png" alt="Titel" id="titel_logo">
+                    </div>
+
+                </div>
+
+
+                <!--Inhalt-->
+                <div class="content-wrapper">
+                    
+                    <div class="start-subtitle">
+                     <h2>Mental Health ist, wenn du dich nicht mit deinem Toaster vergleichen musst.</h2>
+                    </div>
+
+                    <div class="start-image">
+                     <div class="bild-container">
+                        <img src="_static/cat_hover.png" alt="" >
+                     </div>
+                    </div>
+
+                    <div class="start-text">
+                     <p> Suchst du Hilfe? Liebe? Einen Sinn? Wir haben nichts davon. Aber dafür gibts zufällige Internet-Magie. Ein Klick kann alles ändern. Oder nichts. Aber hey – es klickt schön.</p>
+                    </div>
+
+                    <div class="start-buttons">
+                     <div class="page-buttons">
+                        <button type="button" onclick="prevPage()">funny joke</button>
+                        <button type="button" onclick="nextPage()">tough love</button>
+                     </div>
+                    </div>
+                
+                </div>
+
+
+                <!--Footer-->
+                <div class="footer-wrapper">
+
+                    <div class="start-disclaimer">
+                     <img src="_static/Disclaimer.png" alt="disclaimer" id="start-disclaimer">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="page"> <!--Insult Seite-->
+                
+                <!--Header-->
+                <div class="header-wrapper">
+                   
+                    <div class="logo-container">
+                     <img src="_static/Logo.png" alt="Titelbild" id="header_logo">
+                    </div>
+                   
+                    <div class="titel-container">
+                     <img src="_static/Titel_green.png" alt="Titel" id="titel_logo">
+                    </div>
+
+                </div>
+                
+                
+                
+                <h2>The hard truth: genau was du jetzt brauchst!</h2>
+                <p id="output_insult"></p>
+                <div class="page-buttons">
+                    <button type="button" onclick="get_insult('https://insult.mattbas.org/api/insult')">bring mich zum weinen</button>
+                    <button type="button" onclick="prevPage()">bring mich nach Hause</button>
+                </div>
+                <img src="_static/wink.png" alt="Titelbild" id="image_wink">
+                <p>Kleiner Reminder: Wir lieben dich. Diese Beleidigungen sind ironisch. Wenn es dir ernsthaft schlecht geht – hol dir bitte echte Hilfe. </p>
+                <img src="_static/hamster.png" alt="Titelbild" id="image_hamster">
+            </div>
+
+
+        </div>
+    </div>
+
+
 </body>
+
+<!-- Verlinkung zum JavaScript -->
+<script src="_js/script.js"></script>
+
 </html>
