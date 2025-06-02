@@ -28,6 +28,15 @@ body {
     justify-content: start;
 }
 
+.page-404 {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: aquamarine;
+}
 
 
 
@@ -127,9 +136,10 @@ h1, h2, h3, p {
 
 h1 {
     font-size: 3rem;
-    font-family: 'Architects Daughter';
+    font-weight: bold;
+    font-family: 'Azeret Mono', monospace;
     letter-spacing: 2px;
-    color: #ffeb3b; /* Gelb */
+    color: yellow; /* Gelb */
 }
 
 h2 {
@@ -183,6 +193,16 @@ p {
     flex-direction: column;
 }
 
+.content-wrapper-joke {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url('_static/rainbow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .start-subtitle {
     display: flex;
     justify-content: center;
@@ -220,6 +240,20 @@ p {
     justify-content: center;
 }
 
+.title-404 {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle-404{
+    display: flex;
+    justify-content: center; 
+}
+
+.image-404{
+    display: flex;
+    justify-content: center; 
+}
 
 
 /*Footer*/
@@ -265,5 +299,10 @@ p {
 
 #start-disclaimer {
     width: 20%;
+    max-width: 300px;
+}
+
+#image-404{
+    width: 60%;
     max-width: 300px;
 }
