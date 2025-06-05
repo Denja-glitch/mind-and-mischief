@@ -46,7 +46,7 @@ async function get_insult(url) {
 }
 
 
-// Javascript für die Animationen
+// Javascript für die Animationen der Seitenübergänge
 let currentPage = 1; // Start auf Seite 2 (Index 1)
 const slider = document.getElementById('slider');
 const totalPages = 3;
@@ -82,10 +82,11 @@ function prevPage() {
     }
 }
 
-// Lädt die funktion beim öffnen der Seite
+
+
+// Lädt die Funktion beim öffnen der Seite
 
 window.onload = () => {
-    // Reset-Transition (falls nötig, aber hier kein updateSlider nötig)
     setTimeout(() => {
         slider.style.transition = "transform 0.5s ease-in-out";
     }, 50);
@@ -95,6 +96,6 @@ window.onload = () => {
 // Header Logo klickbar auf Startseite
 
 function goToStartPage() {
-    currentPage = 1; // Index der Startseite
+    currentPage = 1; // (Index der Startseite)
     updateSlider();
 }
