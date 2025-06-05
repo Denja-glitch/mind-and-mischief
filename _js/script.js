@@ -90,3 +90,11 @@ window.onload = () => {
         slider.style.transition = "transform 0.5s ease-in-out";
     }, 50);
 };
+
+
+// Header Logo klickbar auf Startseite
+
+function goToStartPage() {
+    currentPage = 1; // Index der Startseite
+    updateSlider();
+}

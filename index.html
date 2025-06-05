@@ -3,19 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <!-- Name der Webseite -->
     <title>Mind&Mischief</title>
 
-    <!-- Verlinkung für CSS -->
-    <link rel="stylesheet" href="_css/reset.css"> <!-- Setzt die CSS Einstellungen des Browsers zurück -->
-    <link rel="stylesheet" href="_css/style.css"> <!-- Hier kommen die gewollten CSS Einstellungen -->
-
+    <link rel="stylesheet" href="_css/style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Azeret+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 
 </head>
+
 
 <body>
 
@@ -25,13 +22,14 @@
         <div id="slider" class="container">
 
 
-            <div class="page"> <!--Joke Seite-->
+            <!--Joke Seite-->
+            <div class="page"> 
                 
                 <!--Header-->
                 <div class="header-wrapper">
                    
                     <div class="logo-container">
-                     <img src="_static/Logo.png" alt="Titelbild" id="header_logo">
+                     <img src="_static/Logo.png" alt="Titelbild" id="header_logo" onclick="goToStartPage()" style="cursor:pointer;">
                     </div>
                    
                     <div class="titel-container">
@@ -40,7 +38,6 @@
 
                 </div>
                 
-
                 <!--Inhalt-->
                 <div class="content-wrapper-joke">
                 
@@ -64,7 +61,8 @@
             </div>
 
 
-            <div class="page"> <!--Startseite-->
+            <!--Startseite-->            
+            <div class="page">
                 
                 <!--Header-->
                 <div class="header-wrapper">
@@ -78,7 +76,6 @@
                     </div>
 
                 </div>
-
 
                 <!--Inhalt-->
                 <div class="content-wrapper">
@@ -101,32 +98,26 @@
 
                     <div class="start-buttons">
                      <div class="page-buttons">
-                        <button type="button" onclick="prevPage()">funny joke</button>
+                        <button class="btn-color-pink" type="button" onclick="prevPage()">funny joke</button>
                         <button type="button" onclick="nextPage()">tough love</button>
                      </div>
                     </div>
                 
                 </div>
 
-
-                <!--Footer-->
-                <div class="footer-wrapper">
-
-                    <div class="start-disclaimer">
-                     <img src="_static/Disclaimer.png" alt="disclaimer" id="start-disclaimer">
-                    </div>
-                </div>
+               
 
             </div>
 
 
-            <div class="page"> <!--Insult Seite-->
+            <!--Insult Seite-->
+            <div class="page">
                 
                 <!--Header-->
                 <div class="header-wrapper">
                    
                     <div class="logo-container">
-                     <img src="_static/Logo.png" alt="Titelbild" id="header_logo">
+                     <img src="_static/Logo.png" alt="Titelbild" id="header_logo" onclick="goToStartPage()" style="cursor:pointer;">
                     </div>
                    
                     <div class="titel-container">
@@ -134,7 +125,6 @@
                     </div>
 
                 </div>
-                
                 
                 <!--Inhalt-->
                 <div class="content-wrapper">
@@ -144,7 +134,7 @@
                     </div>
 
                     <div class="insult-output">
-                     <p id="output_insult"></p>
+                     <p id="output_insult" class="fontstyle-insult"></p>
                     </div>
 
                     <div class="insult-buttons">
@@ -154,10 +144,7 @@
                      </div>
                     </div>
 
-                    
-
                 </div>
-
 
                 <!--Footer-->
                 <div class="footer-wrapper-insult">
@@ -167,7 +154,7 @@
                     </div>
 
                     <div class="insult-disclaimer">
-                     <p>Kleiner Reminder: Wir lieben dich. Diese Beleidigungen sind ironisch. Wenn es dir ernsthaft schlecht geht – hol dir bitte echte Hilfe. </p>
+                     <p class="insult-disclaimer-fontstyle">Kleiner Reminder: Wir lieben dich. Diese Beleidigungen sind ironisch. Wenn es dir ernsthaft schlecht geht – hol dir bitte echte Hilfe. </p>
                     </div>
                     
                 </div>
