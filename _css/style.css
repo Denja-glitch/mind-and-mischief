@@ -263,7 +263,7 @@ p {
     .fontstyle-insult { font-size: 1.3rem; padding-inline: 5rem; }
 }
 
-/* Smartphone (≤ 768px) */
+/* Handy (≤ 768px) */
 @media (max-width: 768px) {
     h1 { font-size: 2rem; }
     h2 { font-size: 1.2rem; }
