@@ -120,13 +120,13 @@ h3 {
 p {
     font-size: 1rem;
     font-family: 'Azeret Mono', monospace;
-    color: #ffaa00;
+    color: yellow;
 }
 
 .fontstyle-insult {
     color: crimson;
     font-size: 1.5rem;
-    padding-inline: 10rem;
+    padding-inline: 5rem;
     text-shadow: none;
 }
 
@@ -157,6 +157,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .content-wrapper-joke {
@@ -195,42 +196,27 @@ p {
 
 .insult-output {
     height: 30vh;
-    width: 50vw;
-    margin-top: 2rem;
-    background-image: url('../_static/Stickynote.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+    width: 40vw;
+    background-color: rgb(247, 237, 226);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
+
 
 
 /* Footer */
-.footer-wrapper {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.start-disclaimer {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 20%;
-    max-width: 300px;
-    z-index: 1000;
-}
 
 .footer-wrapper-insult {
     width: 100vw;
     display: flex;
-    justify-content: flex-end;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 .insult-disclaimer-fontstyle {
-    text-align: left;
+    text-align: right;
+    vertical-align:middle;
+    padding-right: 2rem;
+    padding-left: 10vw;
 }
 
 
@@ -253,7 +239,7 @@ p {
 
 
 #image_insulthamster {
-    height: 20%;
+    height: 45%;
 }
 
 #start-disclaimer {
@@ -299,7 +285,7 @@ p {
 
 @media (max-width: 600px) {
     .page-buttons {
-      flex-direction: column; /* Buttons untereinander */
-      align-items: center;    /* Buttons vertikal zentrieren */
+      flex-direction: column; 
+      align-items: center;
     }
 }
