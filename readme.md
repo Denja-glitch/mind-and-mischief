@@ -18,5 +18,5 @@ Denja: Die Teamarbeit war anfangs schwierig, da Gedankengänge teils schwer nach
 
 # Prompts
 Wir nutzten stets denselben, ausführlichen Einführungstext, um das Projekt zu beschreiben, und stellten dann konkrete Fragen, z. B.:
-- „Wie positioniere ich ein Element dauerhaft in der linken unteren Ecke – unabhängig von der Fenstergröße?“
+- „Wie positioniere ich ein Element dauerhaft in der linken unteren Ecke – unabhängig von der Fenstergrösse?“
 - „Wie zentriere ich Text vertikal innerhalb eines Divs?“
